@@ -28,6 +28,12 @@ ul {
   margin: 0 auto;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
 .logo-first {
   font-family: "Raleway";
   font-style: normal;
@@ -38,12 +44,6 @@ ul {
   margin-right: 93px;
   color: #000000;
   text-decoration: none;
-}
-
-.container-header {
-  display: flex;
-  align-items: center;
-  height: 80px;
 }
 
 .second-f {
@@ -190,8 +190,9 @@ ul {
 
 /* header */
 
+
 /* hero */
-.main-hero {
+.hero {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -209,13 +210,13 @@ ul {
     url(./img/hero.jpg);
 }
 
-.flex-hero {
+.hero__image {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.main-title {
+.hero__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -228,7 +229,7 @@ ul {
   color: #ffffff;
 }
 
-.btn-first {
+.hero__btn {
   align-items: center;
   padding: 10px 32px;
   min-width: 216px;
@@ -248,30 +249,36 @@ ul {
 }
 /* hero */
 
-/* explain */
-.text-style {
-  padding-top: 94px;
-}
 
-.text-flex {
+/* graphics */
+.graphics {
   display: flex;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 94px;
 }
 
-.text-f {
+.graphics__items{
   display: flex;
   gap: 30px;
-}
-
-.text {
   list-style: none;
 }
 
-.title {
+.graphics__items--list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.graphics__title{
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 10px;
@@ -282,12 +289,7 @@ ul {
   color: #212121;
 }
 
-.title-flex {
-  margin-bottom: 10px;
-  padding-right: 30px;
-}
-
-.explain {
+.graphics__explain {
   font-weight: 400;
   font-size: 14px;
   width: 270px;
@@ -296,16 +298,21 @@ ul {
   list-style: none;
   color: #757575;
 }
+/* graphics */
 
-/* explain */
 
-/* Three pictures */
-.three-pictures-style {
+/* gallery*/
+.gallery {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.three-pictures-title {
+.gallery__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -316,22 +323,17 @@ ul {
   color: #212121;
 }
 
-.three-pictures {
+.gallery__pictures {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-.three-pictures-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.drawing {
+.gallery__list {
   position: relative;
 }
 
-.overlay {
+.gallery__list--overlay {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -341,7 +343,7 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.overlay-text {
+.gallery__list--text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -351,21 +353,19 @@ ul {
 
   color: #ffffff;
 }
+/* gallery*/
 
-.four-icons {
+
+/*team */
+.team {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
+  flex-direction: column;
+  background: #f5f5f5;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-/* Three pictures */
 
-/* our team */
-.our-team-title {
+.team__title{
   background: #f5f5f5;
   font-weight: 700;
   font-size: 36px;
@@ -376,12 +376,22 @@ ul {
   color: #212121;
 }
 
-.our-team-list {
+.team__list{
+  display: flex;
+  gap: 30px;
   background: #f5f5f5;
   list-style: none;
 }
 
-.name {
+.team__list--color {
+  background-color: white;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__list--name{
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -392,7 +402,7 @@ ul {
   color: #212121;
 }
 
-.position {
+.team__list--position {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -402,31 +412,7 @@ ul {
   color: #757575;
 }
 
-.our-team-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.team-our {
-  background: #f5f5f5;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-flex {
-  display: flex;
-  gap: 30px;
-}
-
-.team-four {
-  background-color: white;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.socials-list {
+.team__list--socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,7 +421,7 @@ ul {
   list-style: none;
 }
 
-.social-link {
+.team__list--link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,21 +436,20 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.team__list--link:hover,
+.team__list--link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.social-icon {
+.team__list--icon {
   fill: currentColor;
 }
+/*team */
 
-/* our team */
 
-/* our-clients */
-
-.clients-list {
+/*clients */
+.clients {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,7 +459,7 @@ ul {
   background-color: #ffffff;
 }
 
-.clients-name {
+.clients__name {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -484,7 +469,7 @@ ul {
   color: #212121;
 }
 
-.clients {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +477,7 @@ ul {
   list-style: none;
 }
 
-.clients-icons {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,11 +495,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icons:hover {
+.clients__link:hover {
   color: #2196f3;
 }
 
-.clients-icons:focus {
+.clients__link:focus {
   color: #2196f3;
 }
 
@@ -526,6 +511,8 @@ ul {
 .svg-icons:focus {
   fill: currentColor;
 }
+/*clients */
+
 
 /* footer */
 .futurum {
@@ -653,7 +640,7 @@ span {
   fill: #ffffff;
 }
 
-.socials-list-footer {
+.team__list--icon {
   display: flex;
   justify-content: center;
   align-items: center;
