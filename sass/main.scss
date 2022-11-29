@@ -1,0 +1,13 @@
+// utils styles
+@import './utils/variables.scss';
+
+// components styles
+@import './components/container';
+@import './components/header';
+@import './components/logo_header';
+@import './components/nav';
+
+
+// base styles
+@import './base/base';
+@import './base/reset';
