@@ -1,0 +1,41 @@
+.section__portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn__list {
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.btn__list--name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    padding: 6px 25px;
+    min-width: 73px;
+    min-height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-style: none;
+    letter-spacing: 0.03em;
+    background-color: #f5f4fa;
+    color: #212121;
+
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+        color: #ffffff;
+    }
+
+}

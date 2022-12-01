@@ -27,11 +27,11 @@
 
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.menu__list:hover,
-.menu__list:focus {
+    &:hover,
+    &:focus {
     color: #2196f3;
+    }
 }
 
 .header__line::after {
@@ -69,14 +69,11 @@
 
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.mail__header:hover {
+    &:hover,
+    &:focus {
     color: #2196f3;
-}
-
-.mail__header:focus {
-    color: #2196f3;
+    }
 }
 
 .mail__header--enveloper {
@@ -86,14 +83,14 @@
     align-items: center;
     gap: 10px;
     fill: #757575;
+
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
 }
 
 .mail__header--enveloper {
-    fill: currentColor;
-}
-
-.mail__header--enveloper:hover,
-.mail__header--enveloper:focus {
     fill: currentColor;
 }
 
@@ -114,14 +111,11 @@
 
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.telephone__header:hover {
-    color: #2196f3;
-}
-
-.telephone__header:focus {
-    color: #2196f3;
+    &:hover,
+    &:focus {
+        color: #2196f3;
+    }
 }
 
 .telephone__header--smartphone {
@@ -131,13 +125,13 @@
     gap: 10px;
     cursor: pointer;
     fill: #757575;
+
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
 }
 
 .telephone__header--smartphone {
-    fill: currentColor;
-}
-
-.telephone__header--smartphone:hover,
-.telephone__header--smartphone:focus {
     fill: currentColor;
 }

@@ -1,13 +1,32 @@
 // utils styles
 @import './utils/variables.scss';
 
+// base styles
+@import './base/base';
+@import './base/reset';
+
 // components styles
+
+// page studio
 @import './components/container';
 @import './components/header';
 @import './components/logo_header';
 @import './components/nav';
+@import './components/hero';
+@import './components/graphics';
+@import './components/gallery';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
 
+// page portfolio
+@import './components/border-heder';
+@import './components/btn_list';
+@import './components/portfolio_list';
 
-// base styles
-@import './base/base';
-@import './base/reset';
+// modal window
+@import './components/modal';
+
+// form 
+@import './components/form';
+

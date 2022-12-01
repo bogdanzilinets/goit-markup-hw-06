@@ -1,0 +1,79 @@
+.form__footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.footer__form--title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__form--div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 570px;
+    height: 86px;
+}
+
+.footer__form--input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    padding-left: 16px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__form--btn {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+
+    background-color: #2196f3;
+    color: #ffffff;
+    border-color: #2196f3;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
