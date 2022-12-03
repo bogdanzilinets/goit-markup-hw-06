@@ -1,6 +1,27 @@
+// $breakpoints: (
+//     'phone': 480px,
+//     'tablet': 768px,
+//     'desktop': 1200px,
+// );
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    // phone screen
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        // tablet screen
+        @media screen and (min-width: 768px) {
+            width: 720px;
+        }
+    
+        // desktop screen
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 }

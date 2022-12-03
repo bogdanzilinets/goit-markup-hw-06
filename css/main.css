@@ -26,6 +26,21 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header {
   display: -webkit-box;
@@ -316,6 +331,11 @@ ul {
           align-items: center;
   padding-top: 94px;
 }
+@media screen and (max-width: 480px) {
+  .graphics {
+    padding-top: 60px;
+  }
+}
 
 .graphics__items {
   display: -webkit-box;
@@ -368,56 +388,68 @@ ul {
   padding-bottom: 94px;
 }
 
-.gallery__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .gallery__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.gallery__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: 0.03em;
-  color: #212121;
+@media screen and (min-width: 1200px) {
+  .gallery__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
-.gallery__pictures {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .gallery__pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
 }
 
-.gallery__list {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .gallery__list {
+    position: relative;
+  }
 }
 
-.gallery__list--overlay {
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .gallery__list--overlay {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
-.gallery__list--text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .gallery__list--text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .team {
