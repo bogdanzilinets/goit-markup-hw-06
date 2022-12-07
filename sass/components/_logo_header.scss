@@ -8,4 +8,15 @@
     margin-right: 93px;
     color: #000000;
     text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+        font-size: 24px;
+        line-height: calc(28/24);
+        letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 480px) {
+        
+    }
+       
 }

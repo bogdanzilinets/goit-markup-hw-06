@@ -3,10 +3,11 @@
     align-items: center;
     height: 80px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         height: 60px;
+        
     }
-
+       
 }
 
 .header__menu {
@@ -16,6 +17,9 @@
     margin-right: auto;
     gap: 50px;
     list-style: none;
+
+   
+
 }
 
 .menu__list {
@@ -37,6 +41,10 @@
     &:focus {
     color: #2196f3;
     }
+
+         @media screen and (min-width: 480px) {
+             display: none;
+         }
 }
 
 .header__line::after {
@@ -58,6 +66,17 @@
     margin-left: auto;
     align-items: center;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-size: 12px;
+        line-height: calc(14/12);
+        letter-spacing: 0.02em;
+    }
+
+     @media screen and (min-width: 480px) {
+        display: none;
+    }
 }
 
 .mail__header {
@@ -79,6 +98,10 @@
     &:focus {
     color: #2196f3;
     }
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 10px;
+        }
 }
 
 .mail__header--enveloper {
@@ -140,3 +163,4 @@
 .telephone__header--smartphone {
     fill: currentColor;
 }
+
