@@ -9,10 +9,47 @@
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../img/hero.jpg);
+            url(../img/hero.jpg);
+    }   
+
+
+    @media screen and (max-width: 1199px) {
+        height: 400px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin: 0 auto;
+        
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/Headertablet.jpg);
+
+         background-position: center;
+       background-size: cover;
+    }
+
+    @media screen and  (max-width:767px) {
+        
+        height: 400px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+       
+        background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/Headerimg.jpg);
+
+       background-position: center;
+       background-size: cover;
+    }
+
 }
+
 
 .hero__image {
     display: flex;
@@ -31,6 +68,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (min-width: 480px) {
+            font-size: 26px;
+            line-height: calc(42/26);
+            width: 360px;   
+    }
 }
 
 .hero__btn {

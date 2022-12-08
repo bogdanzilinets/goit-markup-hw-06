@@ -1,5 +1,6 @@
 
 .modal__button {
+
     @media screen and (min-width: 480px) {
     position: absolute;
     top: 10px;
@@ -63,6 +64,17 @@
     
 }
 
+.btn__menu {
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 480px) {
+       margin-left: auto;
+    }
+}
+
 .menu__toggle {
  
     @media screen and (min-width: 480px) {
@@ -73,10 +85,12 @@
     border: transparent;
     
     position: inherit;
-   translate:40px;
+   
 }
 
 }
+
+
 
 .mobile-menu {
    
