@@ -4,6 +4,16 @@
     justify-content: center;
     flex-direction: column;
     margin-left: 93px;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+        
+    }
 }
 
 .footer__form--title {
@@ -19,6 +29,12 @@
 
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+            margin: auto;
+        
+    }
 }
 
 .footer__form--div {
@@ -27,6 +43,13 @@
     justify-content: center;
     width: 570px;
     height: 86px;
+
+    @media screen and (max-width: 1199px) {
+            flex-direction: column;
+            width: 450px;
+            height: 156px;
+            gap: 20px;
+        }
 }
 
 .footer__form--input {
@@ -51,6 +74,12 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+        margin-right: 0;
+       
+    }
 }
 
 .footer__form--btn {
@@ -67,7 +96,7 @@
     gap: 10px;
     width: 200px;
     height: 50px;
-    padding-top: 10px;
+    padding: 10px;
     cursor: pointer;
 
     background-color: #2196f3;
@@ -76,4 +105,9 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+        
+            margin-left: 125px;
+        }
 }

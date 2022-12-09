@@ -4,11 +4,22 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    
 }
 
 .footer-box {
     display: flex;
     align-items: baseline;
+
+    @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .footer__logo {
@@ -23,6 +34,15 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        padding-left: 163px;
+        text-align: center;
+        font-size: 24px;
+        line-height: calc(28/24);
+        padding-right: 0px;
+    }
 }
 
 .footer__geocontakts {
@@ -30,6 +50,14 @@
     flex-direction: column;
     padding-top: 20px;
     background-color: #2f303a;
+
+    @media screen and (max-width: 767px) {
+            padding-top: 0px;
+            padding-left: 124px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+  
 }
 
 span {
@@ -71,6 +99,7 @@ span {
     &:hover {
         color: #2196f3;
     }
+
 }
 
 .footer__geocontakts--street {
@@ -90,6 +119,7 @@ span {
     &:hover {
         color: #2196f3;
     }
+
 }
 
 .footer__icons {
@@ -98,6 +128,11 @@ span {
     justify-content: center;
     flex-direction: column;
     margin-left: 70px;
+
+    @media screen and (max-width: 767px) {
+            margin-left: 0px;
+        }
+    
 }
 
 .footer__title {
@@ -114,6 +149,11 @@ span {
 
     color: #ffffff;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+            padding-left: 167px;
+        }
 }
 
 .team__list--icon {
@@ -123,6 +163,12 @@ span {
     gap: 10px;
     padding-bottom: 30px;
     list-style: none;
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+            padding-left: 124px;
+            padding-bottom: 60px;
+        }
 }
 
 .social-link-footer {

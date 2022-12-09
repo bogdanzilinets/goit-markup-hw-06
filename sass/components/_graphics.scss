@@ -1,70 +1,50 @@
 .graphics {
-    
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        padding-top: 94px;
-       
-    }
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
 
     @media screen and (max-width: 1199px) {
-        margin-top: 60px;
+        padding-top: 60px;
+        
     }
-
-    @media screen and (max-width: 767px) {
-            margin-top: 60px;
-        }
 }
 
 .graphics__items {
+    display: flex;
+    gap: 30px;
     list-style: none;
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        gap: 30px;
-    }
-    
-      
-}
-    
-
-.graphics__items--list {
-    
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 270px;
-        height: 120px;
-        background-color: #f5f4fa;
-        margin-bottom: 30px;
-        border-radius: 4px;
-    }
-  
-
-    @media screen and (min-width: 768px) {
-        display: flex;
+    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        width: 354px;
-        // width: calc((100% - 2 * 10px) / 2);
-        // margin: 5px;
-        height: 120px;
-        background-color: #f5f4fa;
-        margin-bottom: 30px;
-    }       
+    }
 
     @media screen and (max-width: 767px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 450px;
-            height: 120px;
-            margin-bottom: 30px;
-            background-color: #f5f4fa;
+            flex-direction: column;
         }
+}
+
+.graphics__items--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+        width: 354px;
+        height: 120px;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        height: 120px;
+        }
+   
+
 }
 
 .graphics__title {
@@ -76,33 +56,18 @@
     text-transform: uppercase;
     list-style: none;
     color: #212121;
-
-   
 }
 
 .graphics__explain {
     font-weight: 400;
     font-size: 14px;
-    
+    width: 270px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     list-style: none;
     color: #757575;
 
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-    }
-
-    @media screen and (max-width: 1199px) {
-      
-        width: 354x;
-        padding-bottom: 30px;
-    }
-    
     @media screen and (max-width: 767px) {
-        display: flex;
-        text-align: justify;
-        padding-bottom: 30px;
         width: 450px;
     }
 }

@@ -70,7 +70,19 @@
     text-transform: uppercase;
     color: #ffffff;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
+       
+        font-size: 44px;
+        line-height: calc(60 / 44);
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: calc(42/26);
+        width: 360px;
+    }
+
+    @media screen and (max-width: 767px) {
         font-size: 26px;
         line-height: calc(42/26);
         width: 360px;   
