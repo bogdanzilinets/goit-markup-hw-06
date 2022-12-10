@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/main.min.css">
-        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 
 <body>
@@ -39,8 +39,16 @@
                 <svg class="telephone__header--smartphone" width="16px" height="16px">
                     <use href="./svg/icomoon/icons.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a>
-        
         </div>
+
+        <div class="btn__menu">
+            <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu__toggle" width="40" height="40">
+                    <use href="./svg/icomoon/icons.svg#icon-menu_burger"></use>
+                </svg>
+            </button>
+        </div>
+
     </div>
     </header>
 
@@ -301,6 +309,54 @@
 
     </footer>
 
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+    
+        <button class="modal__button js-close-menu">
+            <svg data-modal-close width="40" height="40">
+                <use href="./svg/icomoon/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li><a href="" class="link__span">Студія</a></li>
+            <li><a href="" class="link">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+        </ul>
+    
+        <ul class="mobile__contacts">
+            <li>
+                <a href="" class="mobile__phone">+38 096 111 11 11</a>
+            </li>
+    
+            <li>
+                <a href="" class="mobile__email">info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile__socials">
+            <li>
+                <a href="" class="mobile__social--list">Instagram</a>
+            </li>
+            <li>
+                <a href="" class="mobile__social--list">Twitter</a>
+            </li>
+            <li>
+                <a href="" class="mobile__social--list">Facebook</a>
+            </li>
+            <li>
+                <a href="" class="mobile__social--list">LinkedIn</a>
+            </li>
+        </ul>
+    
+    </div>
+
+    <script src="./js/modal.js"></script>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 </body>
 </html>
