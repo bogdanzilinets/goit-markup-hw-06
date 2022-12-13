@@ -15,11 +15,20 @@
     @media screen and (max-width: 1199px) {
             flex-wrap: wrap;
             justify-content:space-around;
+            text-align: center;
         }
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
+        
     }
+}
+
+.footer__box--width {
+    @media screen and (max-width: 767px) {
+        min-width: 100%;
+    }
+    
 }
 
 .footer__logo {
@@ -35,15 +44,18 @@
     color: #ffffff;
     text-decoration: none;
 
-  
+    @media screen and (max-width: 1199px) {
+        display: contents;
+        text-align: center;
+    }
 
     @media screen and (max-width: 767px) {
         display: flex;
-        padding-left: 163px;
         text-align: center;
         font-size: 24px;
         line-height: calc(28/24);
         padding-right: 0px;
+        justify-content: center;
     }
 }
 
@@ -57,7 +69,6 @@
 
     @media screen and (max-width: 767px) {
             padding-top: 0px;
-            padding-left: 124px;
             text-align: center;
             padding-bottom: 60px;
         }
@@ -135,6 +146,7 @@ span {
 
     @media screen and (max-width: 767px) {
             margin-left: 0px;
+            width: 100%;
         }
     
 }
@@ -154,9 +166,15 @@ span {
     color: #ffffff;
     margin-bottom: 20px;
 
+    @media screen and (max-width: 1199px) {
+            display: block;
+            text-align: center;
+        }
+
     @media screen and (max-width: 767px) {
             text-align: center;
-            padding-left: 167px;
+            justify-content: center;
+            display: flex;
         }
 }
 
@@ -170,8 +188,8 @@ span {
 
     @media screen and (max-width: 767px) {
             text-align: center;
-            padding-left: 124px;
-            padding-bottom: 60px;
+            
+            
         }
 }
 

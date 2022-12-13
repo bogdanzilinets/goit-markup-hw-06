@@ -145,13 +145,27 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
 
-                        <li class="team__list--color">
-                        <div class="team__list--color">
-
-                            <img   src="./img/glass-brown.jpg" 
-                                alt="Ігор Дем'яненко" 
-                                width="270" height="260"
-                                loading="lazy"  > 
+                    <li>
+                    <div class="team__list--color">
+                        <picture>
+                            <!-- desktop screen -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team-img/imgL@1x.jpg 1x, ./img/team-img/imgL@2x.jpg 2x">
+                        
+                            <!-- tablet screen -->
+                            <source media="(min-width: 768px)" 
+                            srcset="./img/team-img/imgm@1x.jpg 1x, ./img/team-img/imgm@2x.jpg 2x">
+                        
+                            <!-- phone screen -->
+                            <source media="(max-width: 767px)" 
+                            srcset="./img/team-img/imgs@1x.jpg 1x, ./img/team-img/imgs@2x.jpg 2x">
+                        
+                            <img src="./img/team-img/imgs@1x.jpg" 
+                            alt="Ігор Дем'яненко" 
+                            width="450" height="460" loading="lazy">
+                        
+                            </picture>
+                            
 
 
                                 
@@ -217,7 +231,7 @@
         
             <li>
                 <div class="team__list--color">
-                <img src="./img/girl.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                <img src="./img/girl.jpg" alt="Ольга Рєпіна" width="450px" height="460px">
                 
                     <h3 class="team__list--name">Ольга Рєпіна</h3>
                     <p class="team__list--position">Frontend Developer</p>
@@ -275,7 +289,7 @@
             </li>
             <li>
                 <div class="team__list--color">
-                <img src="./img/man.jpg" alt="Микола Тарасов" width="270" height="260">
+                <img src="./img/man.jpg" alt="Микола Тарасов" width="450px" height="460px">
                 
                     <h3 class="team__list--name">Микола Тарасов</h3>
                     <p class="team__list--position">Marketing</p>
@@ -333,7 +347,7 @@
             </li>
             <li>
                 <div class="team__list--color">
-                <img src="./img/glass-black.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                <img src="./img/glass-black.jpg" alt="Михайло Єрмаков" width="450px" height="460px">
                 
                     <h3 class="team__list--name">Михайло Єрмаков</h3>
                     <p class="team__list--position">UI Designer</p>  
@@ -453,7 +467,7 @@
 
     <footer class="footer">
     <div class="container footer-box">
-        <div>
+        <div class="footer__box--width">
             <a href="" class="footer__logo"><span>Web</span>Studio</a>
             <address class="footer__geocontakts">
                 <a href="https://goo.gl/maps/4ht6zRTBkP7BmseZ8" target="_blank" rel="noopener noreferrer nofolow" 
