@@ -14,14 +14,16 @@
     gap: 30px;
     list-style: none;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         flex-wrap: wrap;
+       
     }
 
     @media screen and (max-width: 767px) {
             flex-direction: column;
         }
 }
+
 
 .graphics__items--list {
     display: flex;
@@ -34,7 +36,8 @@
     border-radius: 4px;
 
     @media screen and (max-width: 1199px) {
-        width: 354px;
+       
+        min-width: 354px;
         height: 120px;
     }
 
