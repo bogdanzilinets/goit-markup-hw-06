@@ -76,7 +76,27 @@
             <ul class="portfolio__list">
                 <li class="portfolio__list--shadow">
                     <div class="portfolio__list--tumb">
-                        <img src="./img2/display.jpg" alt="display" width="370" height="294">
+
+                        <picture>
+                            <!-- desktop screen -->
+                            <source media="(min-width: 1200px)" srcset="./img/portfolio-img/imgL@1x.jpg 1x, ./img/portfolio-img/imgL@2x.jpg 2x">
+                        
+                            <!-- tablet screen -->
+                            <source media="(min-width: 768px)" srcset="./img/portfolio-img/imgm@1x.jpg 1x, ./img/portfolio-img/imgm@2x.jpg 2x">
+                        
+                            <!-- phone screen -->
+                            <source media="(min-width: 480px)" srcset="./img/portfolio-img/imgs@1x.jpg 1x, ./img/portfolio-img/imgs@2x.jpg 2x">
+                        
+                            <img src="./img/portfolio-img/imgs@1x.jpg" 
+                            alt="display" 
+                            width="450" height="294" loading="lazy">
+                        
+                        </picture>
+
+                        <!-- <img src="./img2/display.jpg" 
+                        alt="display" 
+                        width="370" height="294"> -->
+
                         <div class="overlay-nine">
                             <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                 та сервісів. Все це дозволить відвідувачу отримати
@@ -91,9 +111,25 @@
                         </div>
                 </li>
 
-                <li class="portfolio__list--shadow">
+                <li class="portfolio__list--shadow ">
                     <div class="portfolio__list--tumb">
-                        <img src="./img2/jump.jpg" alt="jump"width="370" height="294">
+
+                <picture>
+                    <!-- desktop screen -->
+                    <source media="(min-width: 1200px)" srcset="./img/portfolio-img/imgL@1x-1.jpg 1x, ./img/portfolio-img/imgL@xx-1.jpg 2x">
+                
+                    <!-- tablet screen -->
+                    <source media="(min-width: 768px)" srcset="./img/portfolio-img/imgm@1x-1.jpg 1x, ./img/portfolio-img/imgm@2x-1.jpg 2x">
+                
+                    <!-- phone screen -->
+                    <source media="(min-width: 480px)" srcset="./img/portfolio-img/imgs@1x-1.jpg 1x, ./img/portfolio-img/imgs@2x-1.jpg 2x">
+                
+                    <img src="./img/portfolio-img/imgs@1x-1.jpg" 
+                    alt="display" 
+                    width="450" height="294" loading="lazy">
+                
+                </picture>
+
                         <div class="overlay-nine">
                             <p class="text-nine">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                 та сервісів. Все це дозволить відвідувачу отримати

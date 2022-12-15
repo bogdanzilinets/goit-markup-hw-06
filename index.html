@@ -116,7 +116,9 @@
             <ul class="gallery__pictures">
                 
                 <li class="gallery__list">
-                    <img src="./img/box 1.jpg" alt="креслення" width="370" height="294">
+                    <img src="./img/box 1.jpg" 
+                    alt="креслення" 
+                    width="370" height="294">
 
                     <div class="gallery__list--overlay">
                         <p class="gallery__list--text">Десктопні додатки</p>
@@ -145,8 +147,8 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
 
-                    <li>
-                    <div class="team__list--color">
+                    <li class="team__list--color">
+                    
                         <picture>
                             <!-- desktop screen -->
                             <source media="(min-width: 1200px)"
@@ -157,7 +159,7 @@
                             srcset="./img/team-img/imgm@1x.jpg 1x, ./img/team-img/imgm@2x.jpg 2x">
                         
                             <!-- phone screen -->
-                            <source media="(max-width: 767px)" 
+                            <source media="(min-width: 480px)" 
                             srcset="./img/team-img/imgs@1x.jpg 1x, ./img/team-img/imgs@2x.jpg 2x">
                         
                             <img src="./img/team-img/imgs@1x.jpg" 
@@ -225,13 +227,26 @@
                         </a>
                         </li>
                     </ul>
-                </div>
+                
             </li>
         
         
-            <li>
-                <div class="team__list--color">
-                <img src="./img/girl.jpg" alt="Ольга Рєпіна" width="450px" height="460px">
+            <li class="team__list--color">
+
+                <picture>
+                    <!-- desktop screen -->
+                    <source media="(min-width: 1200px)" srcset="./img/team-img/img2L@1x.jpg 1x, ./img/team-img/img2L@2x.jpg 2x">
+                
+                    <!-- tablet screen -->
+                    <source media="(min-width: 768px)" srcset="./img/team-img/img2m@1x.jpg 1x, ./img/team-img/img2m@2x.jpg 2x">
+                
+                    <!-- phone screen -->
+                    <source media="(min-width: 480px)" srcset="./img/team-img/img2s@1x.jpg 1x, ./img/team-img/img2s@2x.jpg 2x">
+                
+                    <img src="./img/team-img/img2s@1x.jpg" 
+                    alt="Ольга Рєпіна" width="450" height="460" loading="lazy">
+                
+                </picture>
                 
                     <h3 class="team__list--name">Ольга Рєпіна</h3>
                     <p class="team__list--position">Frontend Developer</p>
@@ -284,12 +299,24 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                
             </li>
-            <li>
-                <div class="team__list--color">
-                <img src="./img/man.jpg" alt="Микола Тарасов" width="450px" height="460px">
+
+            <li class="team__list--color">
+    
+                    <picture>
+                        <!-- desktop screen -->
+                        <source media="(min-width: 1200px)" srcset="img/team-img/img3L@1x.jpg 1x, img/team-img/img3L@2x.jpg 2x">
+                    
+                        <!-- tablet screen -->
+                        <source media="(min-width: 768px)" srcset="img/team-img/img3m@1x.jpg 1x, img/team-img/img3m@2x.jpg 2x">
+                    
+                        <!-- phone screen -->
+                        <source media="(min-width: 480px)" srcset="img/team-img/img3s@1x.jpg 1x, img/team-img/img3s@2x.jpg 2x">
+                    
+                        <img src="img/team-img/img3s@1x.jpg" 
+                        alt="Микола Тарасов" 
+                        width="450" height="460" loading="lazy">
+                    </picture>
                 
                     <h3 class="team__list--name">Микола Тарасов</h3>
                     <p class="team__list--position">Marketing</p>
@@ -342,12 +369,24 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                </img>
             </li>
-            <li>
-                <div class="team__list--color">
-                <img src="./img/glass-black.jpg" alt="Михайло Єрмаков" width="450px" height="460px">
+
+            <li class="team__list--color">
+
+                    <picture>
+                        <!-- desktop screen -->
+                        <source media="(min-width: 1200px)" srcset="img/team-img/img4L@1x.jpg 1x, img/team-img/img4L@1x.jpg 2x">
+                    
+                        <!-- tablet screen -->
+                        <source media="(min-width: 768px)" srcset="img/team-img/img4m@1x.jpg 1x, img/team-img/img4m@2x.jpg 2x">
+                    
+                        <!-- phone screen -->
+                        <source media="(min-width: 480px)" srcset="img/team-img/img4s@1x.jpg 1x, img/team-img/img4s@2x.jpg 2x">
+                    
+                        <img src="img/team-img/img4s@1x.jpg" 
+                        alt="Михайло Єрмаков" 
+                        width="450" height="460" loading="lazy">
+                    </picture>
                 
                     <h3 class="team__list--name">Михайло Єрмаков</h3>
                     <p class="team__list--position">UI Designer</p>  
@@ -400,8 +439,6 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                </img>
             </li>
         </ul>
     </div>

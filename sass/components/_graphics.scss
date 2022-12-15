@@ -35,7 +35,7 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
        
         min-width: 354px;
         height: 120px;
