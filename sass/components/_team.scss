@@ -1,7 +1,7 @@
 .team {
     display: flex;
     flex-direction: column;
-    background: #f5f5f5;
+    background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -42,7 +42,7 @@
         @media screen and (min-width: 768px) and (max-width:1199px) {
             display: flex;
             flex-wrap: wrap;
-            margin-top: -30px;
+            
             margin-bottom: -30px;
         }
         
@@ -55,11 +55,13 @@
 
 .team__list--color {
 
+    background-color: #FFFFFF;
+
             @media screen and (min-width: 768px) and (max-width:1199px) {
                 flex-basis: calc((100% - 2 * 30px) / 2);
 
 
-                 background-color: white;
+                
 
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
                     0px 2px 1px rgba(0, 0, 0, 0.2);

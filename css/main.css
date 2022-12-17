@@ -342,6 +342,7 @@ ul {
 }
 @media screen and (max-width: 1199px) {
   .hero {
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -612,7 +613,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f5f5f5;
+  background: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -660,7 +661,6 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
     margin-bottom: -30px;
   }
 }
@@ -673,11 +673,13 @@ ul {
   }
 }
 
+.team__list--color {
+  background-color: #FFFFFF;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list--color {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    background-color: white;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -1093,6 +1095,7 @@ span {
 @media screen and (max-width: 767px) {
   .team__list--icon {
     text-align: center;
+    padding-bottom: 0px;
   }
 }
 
@@ -1331,10 +1334,10 @@ span {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .section__portfolio {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1406,7 +1409,15 @@ span {
     margin-bottom: -30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .portfolio__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1423,12 +1434,6 @@ span {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__list--shadow:hover {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-}
 
 .portfolio__list--shadow:hover .overlay-nine {
   -webkit-transform: translateY(0);
@@ -1438,6 +1443,16 @@ span {
 .portfolio__list--tumb {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list--tumb {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__list--tumb {
+    width: 354px;
+  }
 }
 
 .overlay-nine {
@@ -1500,7 +1515,6 @@ span {
   letter-spacing: 0.06em;
   color: #212121;
 }
-
 .portfolio__list--p {
   font-weight: 400;
   font-size: 16px;
